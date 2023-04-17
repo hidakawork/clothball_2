@@ -6,12 +6,19 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer@1.0.0/dist/model-viewer.min.js"></script>
   </head>
   <body>
+
     <model-viewer
       src="./source/ClothBall.glb"
       ar
       camera-controls
+
+          <div class="controls">
+            <div>Variant: <select id="variant"></select></div>
+          </div>
+
     >
     </model-viewer>
+
         <script>
             const modelViewerVariants = document.querySelector("model-viewer#ClothBall");
             const select = document.querySelector('#variant');
